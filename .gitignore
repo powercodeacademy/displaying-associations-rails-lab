@@ -5,8 +5,34 @@
 #tmp
 tmp
 
+
 # DB
-db/*.sqlite3
+db/*.sqlite3*
+db/*.sqlite3-journal
+db/production.sqlite3
+
+# Rails credentials and secrets
+config/master.key
+config/credentials.yml.enc
+
+# Logs and temp
+log/*
+tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Byebug command history
+.byebug_history
+
+# Ignore .env files
+.env
+.env.*
+
+# Ignore coverage reports
+coverage/
+
+# Ignore system files
+.DS_Store
 
 ### Node ###
 # Logs
@@ -49,3 +75,5 @@ jspm_packages
 /log/*
 !/log/.keep
 /tmp
+db/development.sqlite3
+db/test.sqlite3
