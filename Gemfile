@@ -1,18 +1,19 @@
 source 'https://rubygems.org'
 
-gem 'rails', '5.0.7.1'
-gem 'sqlite3', '~>1.3.6'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'bootsnap'
+ruby '3.3.5'
+gem 'rails', '~> 7.1', '>= 7.1.3'
+gem 'sqlite3', '~> 1.7'
+gem 'puma', '~> 6.4'
+gem 'webrick', '~> 1.8'
+gem 'ostruct'
+gem 'jbuilder', '~> 2.12'
+gem 'bootsnap', '>= 1.17.0', require: false
 
-group :development, :test do
-  gem 'pry'
-  gem 'capybara'
-  gem 'rspec-rails'
+group :development do
+  # Add any development-only gems here
 end
 
 group :development do
 end
+
+gem "rspec-rails", "~> 8.0", groups: [:development, :test]
