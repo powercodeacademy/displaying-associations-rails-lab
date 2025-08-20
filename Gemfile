@@ -10,10 +10,9 @@ gem 'jbuilder', '~> 2.12'
 gem 'bootsnap', '>= 1.17.0', require: false
 
 group :development do
-  # Add any development-only gems here
 end
 
-group :development do
+group :development, :test do
+  gem "rspec-rails", "~> 8.0"
+  gem 'capybara'
 end
-
-gem "rspec-rails", "~> 8.0", groups: [:development, :test]
