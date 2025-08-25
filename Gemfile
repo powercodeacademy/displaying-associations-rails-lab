@@ -8,6 +8,7 @@ gem 'webrick', '~> 1.8'
 gem 'ostruct'
 gem 'jbuilder', '~> 2.12'
 gem 'bootsnap', '>= 1.17.0', require: false
+gem "capybara"
 
 group :development do
 end
