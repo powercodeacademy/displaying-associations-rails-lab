@@ -10,6 +10,8 @@ gem 'jbuilder', '~> 2.12'
 gem 'bootsnap', '>= 1.17.0', require: false
 
 group :development do
+  gem 'rubocop', require: false
+  gem 'pry'
 end
 
 group :development, :test do
